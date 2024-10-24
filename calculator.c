@@ -25,6 +25,16 @@ int multiply(int i, int j) {
 float divide(int i, int j) {
     if (j == 0) {
         printf("Error: Division by zero is not allowed.\n");
+double inverse(double x) {
+    if (x != 0) {
+        return 1 / x;
+    } else {
+        printf("Error: Division by zero\n");
+        return 0; // Handle division by zero
+    }
+}
+
+// Add code to call this function as needed
         return 0; // Return 0 to indicate an error.
     }
     return ((float) i / j);  // Explicit type casting to float for decimal results.
@@ -84,7 +94,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf(" inverse of %d is %d\n",a,double(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
