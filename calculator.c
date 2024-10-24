@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+double square(double x) {
+    return x * x;
+}
+
+double cube(double x) {
+    return x * x * x;
+}
+
+// Add code to call these functions as needed
+
 int add(int i, int j) {
     return (i + j);
 }
@@ -64,12 +74,12 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("square of %d id %f\n",a,double(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("cube of %d is %f\n",a,double(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
